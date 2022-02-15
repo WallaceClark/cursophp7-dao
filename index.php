@@ -52,8 +52,15 @@
     echo "<hr>";
 
     $usuario = new Usuario();
-    $usuario->loadById(13);
-    $usuario->update("joão13", "j040");
+    $usuario->loadById(15);
+    $usuario->update("joão15", "j040");
 
     echo $usuario;
+
+    $joao = new Usuario();
+    $joao->loadById(14);
+    $joao->delete();
+
+    echo $joao;
+
 ?>
