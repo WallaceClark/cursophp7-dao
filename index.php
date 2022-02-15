@@ -42,4 +42,18 @@
     $dadosLogin->login("wallace","987654");
     echo $dadosLogin;
 
+    echo "<hr>";
+
+    $aluno = new Usuario("joão","j040");
+    $aluno->insert();
+
+    echo $aluno;
+
+    echo "<hr>";
+
+    $usuario = new Usuario();
+    $usuario->loadById(13);
+    $usuario->update("joão13", "j040");
+
+    echo $usuario;
 ?>
